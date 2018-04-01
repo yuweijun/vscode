@@ -1,0 +1,41 @@
+{
+    "Public Class": {
+        "prefix": "pclass",
+        "body": [
+            "/**",
+            " * @author yuweijun@${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+            " */",
+            "public class ${TM_FILENAME_BASE} {",
+            "\tpublic ${TM_FILENAME_BASE} () {",
+            "\t}\n",
+            "\t$0",
+            "}"
+        ],
+        "description": "public class"
+    },
+    "Junit Test Case": {
+        "prefix": "test",
+        "body": [
+            "@Test",
+            "public void test$1() {",
+            "\t$0",
+            "}\n"
+        ],
+        "description": "create new jUnit test case"
+    },
+    "System out println": {
+        "prefix": "sout",
+        "body": "System.out.println($1);$0",
+        "description": "system out println"
+    },
+    "Instance Logger": {
+        "prefix": "logger",
+        "body": "private final Logger logger = LoggerFactory.getLogger(getClass());",
+        "description": "add instance logger of org.slf4j.Logger"
+    },
+    "Static Logger": {
+        "prefix": "LOGGER",
+        "body": "private static final Logger LOGGER = LoggerFactory.getLogger(${TM_FILENAME_BASE}.class);",
+        "description": "add static LOGGER of org.slf4j.Logger"
+    }
+}

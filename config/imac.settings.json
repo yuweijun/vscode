@@ -1,0 +1,37 @@
+{
+	"terminal.integrated.shell.osx": "/bin/bash",
+	"terminal.integrated.scrollback": 100000,
+	"terminal.integrated.fontSize": 16,
+	"editor.fontSize": 18,
+	"editor.minimap.enabled": false,
+	"files.encoding": "utf8",
+	"files.autoSave": "afterDelay",
+	"window.zoomLevel": 0,
+	"explorer.sortOrder": "modified",
+	"git.enableSmartCommit": true,
+	"java.saveActions.organizeImports": true,
+	"java.errors.incompleteClasspath.severity": "ignore",
+	"extensions.ignoreRecommendations": false,
+	"files.associations": {
+		"*.ftl": "html"
+	},
+	"vim.enableNeovim": true,
+	"vim.neovimPath": "/usr/local/bin/nvim",
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [ "j", "j" ],
+			"after": [ "<Esc>" ]
+		}
+	],
+	"files.exclude": {
+		"**/node_modules": true,
+		"**/target": true,
+		"**/logs": true,
+		"**/.git": true,
+		"**/.idea": true,
+		"**/.svn": true,
+		"**/.DS_Store": true
+	},
+	"workbench.activityBar.visible": false,
+	"workbench.statusBar.feedback.visible": false
+}
