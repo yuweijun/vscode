@@ -1,4 +1,3 @@
-// Place your key bindings in this file to overwrite the defaults
 [
     {
         "key": "alt+w",
@@ -47,11 +46,6 @@
         "command": "editor.action.toggleMinimap"
     },
     {
-        "key": "alt+z",
-        "command": "undo",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "alt+s",
         "command": "workbench.action.files.save"
     },
@@ -62,6 +56,11 @@
     },
     {
         "key": "alt+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+d",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -442,5 +441,233 @@
     {
         "key": "ctrl+b",
         "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "ctrl+k ctrl+h",
+        "command": "-workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "git.refresh"
+    },
+    {
+        "key": "alt+k alt+k",
+        "command": "editor.action.defineKeybinding",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
+    },
+    {
+        "key": "ctrl+k ctrl+k",
+        "command": "-editor.action.defineKeybinding",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
+    },
+    {
+        "key": "alt+k alt+k",
+        "command": "keybindings.editor.defineKeybinding",
+        "when": "inKeybindings && keybindingFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+k",
+        "command": "-keybindings.editor.defineKeybinding",
+        "when": "inKeybindings && keybindingFocus"
+    },
+    {
+        "key": "alt+k alt+0",
+        "command": "editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+0",
+        "command": "-editor.foldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+/",
+        "command": "editor.foldAllBlockComments",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+/",
+        "command": "-editor.foldAllBlockComments",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+8",
+        "command": "editor.foldAllMarkerRegions",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+8",
+        "command": "-editor.foldAllMarkerRegions",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+1",
+        "command": "editor.foldLevel1",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+1",
+        "command": "-editor.foldLevel1",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+2",
+        "command": "editor.foldLevel2",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+2",
+        "command": "-editor.foldLevel2",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+3",
+        "command": "editor.foldLevel3",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+3",
+        "command": "-editor.foldLevel3",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+4",
+        "command": "editor.foldLevel4",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+4",
+        "command": "-editor.foldLevel4",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+5",
+        "command": "editor.foldLevel5",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+5",
+        "command": "-editor.foldLevel5",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+6",
+        "command": "editor.foldLevel6",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+6",
+        "command": "-editor.foldLevel6",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+7",
+        "command": "editor.foldLevel7",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+7",
+        "command": "-editor.foldLevel7",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+[",
+        "command": "editor.foldRecursively",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+[",
+        "command": "-editor.foldRecursively",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+f",
+        "command": "editor.action.formatSelection",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+f",
+        "command": "-editor.action.formatSelection",
+        "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+k alt+j",
+        "command": "editor.unfoldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+j",
+        "command": "-editor.unfoldAll",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+9",
+        "command": "editor.unfoldAllMarkerRegions",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+9",
+        "command": "-editor.unfoldAllMarkerRegions",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+]",
+        "command": "editor.unfoldRecursively",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+]",
+        "command": "-editor.unfoldRecursively",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k alt+x",
+        "command": "editor.action.trimTrailingWhitespace",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+x",
+        "command": "-editor.action.trimTrailingWhitespace",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+m",
+        "command": "-workbench.extensions.action.showRecommendedKeymapExtensions"
+    },
+    {
+        "key": "shift+alt+[",
+        "command": "editor.fold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+]",
+        "command": "editor.unfold",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+t",
+        "command": "workbench.action.focusActiveEditorGroup"
     }
 ]
