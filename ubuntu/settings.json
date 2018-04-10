@@ -1,0 +1,48 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "explorer.sortOrder": "modified",
+    "extensions.ignoreRecommendations": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 3000,
+    "java.autobuild.enabled": true,
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.saveActions.organizeImports": true,
+    "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.shell.linux": "bash",
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "window.enableMenuBarMnemonics": false,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.feedback.visible": false,
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/target": true,
+        "**/logs": true,
+        "**/.git": true
+    },
+    "search.exclude": {
+        "**/.sts4-cache": true,
+        "**/node_modules": true,
+        "**/bower_components": true
+    }
+}

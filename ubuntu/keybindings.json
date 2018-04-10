@@ -1,3 +1,4 @@
+// Place your key bindings in this file to overwrite the defaults
 [
     {
         "key": "alt+w",
@@ -204,7 +205,7 @@
         "key": "meta+right",
         "command": "-extension.vim_cmd+right",
         "when": "editorTextFocus && vim.active && vim.use<D-right> && !inDebugRepl && vim.mode != 'Insert'"
-},
+    },
     {
         "key": "meta+left",
         "command": "-extension.vim_cmd+left",
@@ -417,7 +418,7 @@
         "command": "workbench.output.action.clearOutput"
     },
     {
-        "key": "shift+alt+z",
+        "key": "ctrl+alt+z",
         "command": "git.clean"
     },
     {
@@ -669,5 +670,77 @@
     {
         "key": "shift+alt+t",
         "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "alt+f12",
+        "command": "editor.action.previewDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+f10",
+        "command": "-editor.action.previewDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+    },
+    {
+        "key": "alt+z",
+        "command": "undo",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "java.edit.organizeImports",
+        "when": "editorTextFocus && !editorReadnly"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "-java.edit.organizeImports",
+        "when": "editorTextFocus && !editorReadnly"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+shift+o",
+        "command": "-workbench.action.gotoSymbol"
+    },
+    {
+        "key": "alt+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "alt+k c",
+        "command": "workbench.files.action.compareWithClipboard"
+    },
+    {
+        "key": "ctrl+k c",
+        "command": "-workbench.files.action.compareWithClipboard"
+    },
+    {
+        "key": "alt+k d",
+        "command": "workbench.files.action.compareWithSaved"
+    },
+    {
+        "key": "ctrl+k d",
+        "command": "-workbench.files.action.compareWithSaved"
+    },
+    {
+        "key": "alt+k alt+u",
+        "command": "java.projectConfiguration.update",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+u",
+        "command": "-java.projectConfiguration.update",
+        "when": "editorFocus"
     }
 ]
